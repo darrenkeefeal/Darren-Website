@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Darren Portfolio Website</title>
+    <script src="https://kit.fontawesome.com/1afced48c3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>
+                    Game Developer, Community Manager, QA
+                </p>
+                <h1>
+                    Hello, My name is <span> Darren </span> <br> From Indonesia
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">
+                        About Me
+                    </h1>
+                    <p>
+                        I`m a graduate from Information Technology with 3.00 GPA in Indonesia,
+                        Have experience in Game Company as a Community Manager and Programmer. <br>
+                        Love to code, learn new things, and make a new games. <br>
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('language')">Language</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Game</span><br>Game Developer</li>
+                            <li><span>Game</span><br>QA Tester</li>
+                            <li><span>Community</span><br>Community Manager</li>
+                            <li><span>Community</span><br>Localization</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Feb 2022 - Present</span><br>Unity Game Developer (Platinum Egg)</li>
+                            <li><span>Sep 2021 - Dec 2021</span><br>Localization (Yeehe)</li>
+                            <li><span>Feb 2019 - Dec 2021</span><br>Community Manager (goGame)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019 - 2022</span><br>(Japanese Language) Osaka Bunka Kokusai Gakkou, Japan</li>
+                            <li><span>2014 - 2018</span><br>(Information Technology Bachelor) Sekolah Tinggi Teknik Surabaya, Indonesia</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="language">
+                        <ul>
+                            <li><span>Indonesian</span><br>Mother Language</li>
+                            <li><span>English</span><br>Professional Work</li>
+                            <li><span>Japanese</span><br>JLPT N2 & BJT J3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="work">
+        <div class="container">
+            <h1 class="sub-title">
+                My Work
+            </h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Game Developer</h2>
+                    <p>As a Game Developer, I made new UI from the help of designer team. Creating a new feature for the game such as Battle Pass,
+                        Battle Raids, and fixing bugs that the players are having.
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Community Manager</h2>
+                    <p>As a Community Manager, I made new events for the players to enjoy. Helping the Marketing team to promote our Game.
+                        I also did Game Testing, LQA, and QA while I was a Community Manager. I lead a team of 4 people while I was working
+                        as a Community Manager.
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-language"></i>
+                    <h2>Localization</h2>
+                    <p>I did some Localization works as a freelance to fill my free time. As, I was doing this I learn so much about Localization tasks
+                        Localize words from English to Indonesia and the other way around it too. I love to learn new language and read the game
+                        story line.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">
+                My Portfolio
+            </h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg">
+                    <div class="layer">
+                        <h3>
+                            Unity Client Engineer
+                        </h3>
+                        <p>
+                            Fixing Bugs, Create a new UI for the Players, Connect data from the server
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=com.platinumegg.crosslink&hl=en&gl=US"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpg">
+                    <div class="layer">
+                        <h3>
+                            Community Manager
+                        </h3>
+                        <p>
+                            Create new events, Marketing for Indonesia Players, Game Management, Player Support
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=com.piispanen.hotelhideaway&hl=en&gl=US"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>
+                            Localization / QA Tester
+                        </h3>
+                        <p>
+                            Translate from English -> Indonesia <br>
+                            Translate from Indonesia -> English <br>
+                            Testing Game (Looking for Bugs) 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="btn"></div>
+        </div>
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">
+                            Contact Me
+                        </h1>
+                        <p><i class="fa-solid fa-envelope"></i>darrenkeefeal@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+6281333957666</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/darrenkeefem/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/darrenkeefem/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <a href="images/Darren_Keefe_Resume.pdf" download class="btn btn2">Download Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright Darren Keefe, Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname)
+    {
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu()
+    {
+        sidemenu.style.right = "0";
+    }
+    function closemenu()
+    {
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
